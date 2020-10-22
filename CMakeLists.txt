@@ -3,4 +3,4 @@ project(data_structure_course)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(data_structure_course main.cpp)
+add_executable(data_structure_course arrayList.cpp)

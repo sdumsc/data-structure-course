@@ -80,7 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/project/sdumsc/data-structure-course/main.cpp">
+		<Unit filename="E:/project/sdumsc/data-structure-course/arrayList.cpp">
+			<Option target="data_structure_course"/>
+		</Unit>
+		<Unit filename="E:/project/sdumsc/data-structure-course/arrayList.h">
 			<Option target="data_structure_course"/>
 		</Unit>
 		<Unit filename="E:/project/sdumsc/data-structure-course/CMakeLists.txt">

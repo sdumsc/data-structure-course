@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/data_structure_course.dir/main.cpp.obj"
+  "CMakeFiles/data_structure_course.dir/arrayList.cpp.obj"
   "data_structure_course.exe"
   "data_structure_course.exe.manifest"
   "data_structure_course.pdb"

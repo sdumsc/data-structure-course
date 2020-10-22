@@ -122,32 +122,32 @@ data_structure_course/fast:
 	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/build
 .PHONY : data_structure_course/fast
 
-main.obj: main.cpp.obj
+arrayList.obj: arrayList.cpp.obj
 
-.PHONY : main.obj
+.PHONY : arrayList.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+arrayList.cpp.obj:
+	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/arrayList.cpp.obj
+.PHONY : arrayList.cpp.obj
 
-main.i: main.cpp.i
+arrayList.i: arrayList.cpp.i
 
-.PHONY : main.i
+.PHONY : arrayList.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/main.cpp.i
-.PHONY : main.cpp.i
+arrayList.cpp.i:
+	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/arrayList.cpp.i
+.PHONY : arrayList.cpp.i
 
-main.s: main.cpp.s
+arrayList.s: arrayList.cpp.s
 
-.PHONY : main.s
+.PHONY : arrayList.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/main.cpp.s
-.PHONY : main.cpp.s
+arrayList.cpp.s:
+	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/arrayList.cpp.s
+.PHONY : arrayList.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... data_structure_course
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... arrayList.obj
+	@echo ... arrayList.i
+	@echo ... arrayList.s
 .PHONY : help
 
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/project/sdumsc/data-structure-course/main.cpp" "E:/project/sdumsc/data-structure-course/cmake-build-debug/CMakeFiles/data_structure_course.dir/main.cpp.obj"
+  "E:/project/sdumsc/data-structure-course/arrayList.cpp" "E:/project/sdumsc/data-structure-course/cmake-build-debug/CMakeFiles/data_structure_course.dir/arrayList.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
