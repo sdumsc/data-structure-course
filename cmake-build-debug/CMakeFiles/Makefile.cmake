@@ -54,4 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/data_structure_course.dir/DependInfo.cmake"
+  "CMakeFiles/priorityQueue.dir/DependInfo.cmake"
   )

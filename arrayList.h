@@ -31,6 +31,8 @@ public:
     void erase(int theIndex);
     void insert(int theIndex, const T &theElement);
 
+    T & operator[](int x) { return this->get(x); }
+
     class iterator;
     typedef typename arrayList<T>::iterator iterator;
 
