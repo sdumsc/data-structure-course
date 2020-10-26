@@ -13,7 +13,7 @@ An implement of the data structure course in our sophomore year.
 
 **P.S : 尚未测试过的实现我会推在yyl分支上, 测试完成后会推到dev分支.**
 
-**list中破折号之后表示该部分当前的状态. yyl : 尚未测试. dev : 测试完成. null : 尚未实现
+**list中破折号之后表示该部分当前的状态. yyl : 尚未测试. dev : 测试完成. null : 尚未实现**
 
 ## 线性表
 
