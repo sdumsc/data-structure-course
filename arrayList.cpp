@@ -10,11 +10,13 @@
 
 using namespace std;
 
+template arrayList<int>::arrayList(int);
+
 //更改数组长度, 实现变长数组.
 template<class T>
 void changeLength(T*& a, int newLength, int oldLength) {
   //debug
-  cout << "resize the list from " << oldLength << " to " << newLength << endl;
+//  cout << "resize the list from " << oldLength << " to " << newLength << endl;
   if (newLength < 1) {
     throw length_error("new length must be > 0");
   }
@@ -121,35 +123,35 @@ void arrayList<T>::output(ostream& out) const {
   copy(element, element + listSize, ostream_iterator<T>(out, "  "));
 }
 
-int main() {
-  //arrayList类测试.
-  cout << "The test of the arrayList." << endl;
-  linearList<double> * alist = new arrayList<double>();
-  cout << "Insert" << endl;
-  for (int i = 0; i < 100; i++) {
-    alist->insert(0, 3.14*i);
-  }
-  cout << "Size(size == 100)" << endl;
-  cout << "\tsize = " << alist->size() << endl;
-  cout << "Iterator" << endl;
-  int cnt = 0;
-  for (auto x = dynamic_cast<arrayList<double>*>(alist)->begin(); x != dynamic_cast<arrayList<double>*>(alist)->end(); ++x)
-    cnt++;
-  cout << "\tcnt = " << cnt << endl;
-  cout << "Empty(empty == 0)" << endl;
-  cout << "\tempty = " << alist->empty() << endl;
-  cout << "IndexOf(index == 99)" << endl;
-  cout << "\tindex = " << alist->indexOf(0) << endl;
-  cout << "Get(element = 157)" << endl;
-  cout << "\telement = " << alist->get(49)<< endl;
-  cout << "Output" << endl;
-  cout << "\t" << *alist << endl;
-  cout << "Constructor" << endl;
-  linearList<double> * newalist = new arrayList<double>(*dynamic_cast<arrayList<double>*>(alist));
-  cout << "Destructor" << endl;
-  delete alist;
-  cout << "Erase" << endl;
-  for (int i = 0; i < 100; i++)
-    newalist->erase(99-i);
-  return 0;
-}
+//int main() {
+//  //arrayList类测试.
+//  cout << "The test of the arrayList." << endl;
+//  linearList<double> * alist = new arrayList<double>();
+//  cout << "Insert" << endl;
+//  for (int i = 0; i < 100; i++) {
+//    alist->insert(0, 3.14*i);
+//  }
+//  cout << "Size(size == 100)" << endl;
+//  cout << "\tsize = " << alist->size() << endl;
+//  cout << "Iterator" << endl;
+//  int cnt = 0;
+//  for (auto x = dynamic_cast<arrayList<double>*>(alist)->begin(); x != dynamic_cast<arrayList<double>*>(alist)->end(); ++x)
+//    cnt++;
+//  cout << "\tcnt = " << cnt << endl;
+//  cout << "Empty(empty == 0)" << endl;
+//  cout << "\tempty = " << alist->empty() << endl;
+//  cout << "IndexOf(index == 99)" << endl;
+//  cout << "\tindex = " << alist->indexOf(0) << endl;
+//  cout << "Get(element = 157)" << endl;
+//  cout << "\telement = " << alist->get(49)<< endl;
+//  cout << "Output" << endl;
+//  cout << "\t" << *alist << endl;
+//  cout << "Constructor" << endl;
+//  linearList<double> * newalist = new arrayList<double>(*dynamic_cast<arrayList<double>*>(alist));
+//  cout << "Destructor" << endl;
+//  delete alist;
+//  cout << "Erase" << endl;
+//  for (int i = 0; i < 100; i++)
+//    newalist->erase(99-i);
+//  return 0;
+//}

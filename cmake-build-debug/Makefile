@@ -122,6 +122,19 @@ data_structure_course/fast:
 	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/build
 .PHONY : data_structure_course/fast
 
+#=============================================================================
+# Target rules for targets named priorityQueue
+
+# Build rule for target.
+priorityQueue: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 priorityQueue
+.PHONY : priorityQueue
+
+# fast build rule for target.
+priorityQueue/fast:
+	$(MAKE) -f CMakeFiles\priorityQueue.dir\build.make CMakeFiles/priorityQueue.dir/build
+.PHONY : priorityQueue/fast
+
 arrayList.obj: arrayList.cpp.obj
 
 .PHONY : arrayList.obj
@@ -129,6 +142,7 @@ arrayList.obj: arrayList.cpp.obj
 # target to build an object file
 arrayList.cpp.obj:
 	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/arrayList.cpp.obj
+	$(MAKE) -f CMakeFiles\priorityQueue.dir\build.make CMakeFiles/priorityQueue.dir/arrayList.cpp.obj
 .PHONY : arrayList.cpp.obj
 
 arrayList.i: arrayList.cpp.i
@@ -138,6 +152,7 @@ arrayList.i: arrayList.cpp.i
 # target to preprocess a source file
 arrayList.cpp.i:
 	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/arrayList.cpp.i
+	$(MAKE) -f CMakeFiles\priorityQueue.dir\build.make CMakeFiles/priorityQueue.dir/arrayList.cpp.i
 .PHONY : arrayList.cpp.i
 
 arrayList.s: arrayList.cpp.s
@@ -147,7 +162,35 @@ arrayList.s: arrayList.cpp.s
 # target to generate assembly for a file
 arrayList.cpp.s:
 	$(MAKE) -f CMakeFiles\data_structure_course.dir\build.make CMakeFiles/data_structure_course.dir/arrayList.cpp.s
+	$(MAKE) -f CMakeFiles\priorityQueue.dir\build.make CMakeFiles/priorityQueue.dir/arrayList.cpp.s
 .PHONY : arrayList.cpp.s
+
+priorityQueue.obj: priorityQueue.cpp.obj
+
+.PHONY : priorityQueue.obj
+
+# target to build an object file
+priorityQueue.cpp.obj:
+	$(MAKE) -f CMakeFiles\priorityQueue.dir\build.make CMakeFiles/priorityQueue.dir/priorityQueue.cpp.obj
+.PHONY : priorityQueue.cpp.obj
+
+priorityQueue.i: priorityQueue.cpp.i
+
+.PHONY : priorityQueue.i
+
+# target to preprocess a source file
+priorityQueue.cpp.i:
+	$(MAKE) -f CMakeFiles\priorityQueue.dir\build.make CMakeFiles/priorityQueue.dir/priorityQueue.cpp.i
+.PHONY : priorityQueue.cpp.i
+
+priorityQueue.s: priorityQueue.cpp.s
+
+.PHONY : priorityQueue.s
+
+# target to generate assembly for a file
+priorityQueue.cpp.s:
+	$(MAKE) -f CMakeFiles\priorityQueue.dir\build.make CMakeFiles/priorityQueue.dir/priorityQueue.cpp.s
+.PHONY : priorityQueue.cpp.s
 
 # Help Target
 help:
@@ -157,10 +200,14 @@ help:
 	@echo ... depend
 	@echo ... rebuild_cache
 	@echo ... data_structure_course
+	@echo ... priorityQueue
 	@echo ... edit_cache
 	@echo ... arrayList.obj
 	@echo ... arrayList.i
 	@echo ... arrayList.s
+	@echo ... priorityQueue.obj
+	@echo ... priorityQueue.i
+	@echo ... priorityQueue.s
 .PHONY : help
 
 
