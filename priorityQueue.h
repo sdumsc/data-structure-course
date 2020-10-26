@@ -19,15 +19,19 @@ public:
   ~priorityQueue();
 
   //实现ADT
-  int size() const { return array.size(); }
-  bool empty() const { return array.empty(); }
+  int size() const { return array->size(); }
+  bool empty() const { return array->empty(); }
   T& top();
   void pop();
   void push(const T&);
 
+  friend std::ostream & operator<<(std::ostream & out, const priorityQueue<T>& x) {
+    out << *(x.array);
+  }
+
 private:
   //线性表.
-  arrayList<T> array;
+  arrayList<T> * array;
 
   int getMaxSon(int father);
 };

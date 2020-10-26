@@ -5,6 +5,8 @@
 #ifndef DATA_STRUCTURE_COURSE_QUEUE_H
 #define DATA_STRUCTURE_COURSE_QUEUE_H
 
+#include <iostream>
+
 template<class T>
 class queue {
 public:

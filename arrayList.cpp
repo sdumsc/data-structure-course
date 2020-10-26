@@ -10,11 +10,13 @@
 
 using namespace std;
 
+template arrayList<int>::arrayList(int);
+
 //更改数组长度, 实现变长数组.
 template<class T>
 void changeLength(T*& a, int newLength, int oldLength) {
   //debug
-  cout << "resize the list from " << oldLength << " to " << newLength << endl;
+//  cout << "resize the list from " << oldLength << " to " << newLength << endl;
   if (newLength < 1) {
     throw length_error("new length must be > 0");
   }

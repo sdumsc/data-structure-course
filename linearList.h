@@ -21,9 +21,6 @@ public:
   virtual void erase(int theIndex) = 0;
   virtual void insert(int theIndex, const T &theElement) = 0;
 
-  //重载随机访问
-  virtual T& operator[](int x) { return get(x); }
-
   //重载流输出运算符, 依赖抽象方法output.
   friend std::ostream &operator<<(std::ostream &out, const linearList<T> &x) {
     x.output(out);
